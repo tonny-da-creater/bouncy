@@ -1,0 +1,75 @@
+@import 'variables.scss';
+
+
+.project-block {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .15s linear;
+
+    &:first-child {
+        background: url(../images/proj-img-1.jpg) no-repeat center/cover;
+        width: 50%;
+        height: 25vw;
+    }
+
+    &:nth-child(2) {
+        background: url(../images/proj-img-2.jpg) no-repeat center/cover;
+        width: 25%;
+        height: 25vw;
+    }
+
+    &:last-child {
+        background: url(../images/prog-img-3.jpg) no-repeat center/cover;
+        width: 25%;
+        height: 25vw;
+    }
+
+    &__text {
+        color: #ffffff;
+        font-family: "Source-Sans-Pro";
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+
+}
+
+.button-block {
+    background: url(../images/btn-bg.jpg) no-repeat center/cover;
+
+    &__text {
+        margin: 0;
+        color: #ffffff;
+        font-family: "open-sans-regular";
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.8px;
+
+        &_bold {
+            font-family: "open-sans-bold";
+
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .project-block {
+        &:first-child {
+            width: 100%;
+            height: 25vw;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            height: 25vw;
+        }
+
+        &:last-child {
+            width: 100%;
+            height: 25vw;
+        }
+    }
+}

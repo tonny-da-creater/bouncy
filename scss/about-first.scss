@@ -1,0 +1,19 @@
+.about-first {
+    padding-top: 70px;
+//    padding-top: 4.7%;
+    padding-bottom: 57px;
+//    padding-bottom: 4%;
+
+    .wrapper {
+        padding-top: 34px;
+    }
+
+    &__title {
+        padding-bottom: 30px;
+    }
+
+    &__btn {
+        border: 1px solid #333b46;
+        margin-top: 25px;
+    }
+}

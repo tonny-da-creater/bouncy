@@ -1,0 +1,119 @@
+.team {
+    padding-bottom: 100px;
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__content {
+        text-align: right;
+    }
+
+    .carousel-inner {
+
+        .carousel-item {
+            padding: 0 70px;
+        }
+
+        &__name {
+            font-size: 20px;
+            color: #464646;
+        }
+
+        &__position {
+            color: #81868e;
+            font-family: "Source-Sans-Pro";
+            line-height: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        .progress-bar-block__text {
+            color: #81868e;
+            font-family: "Source-Sans-Pro";
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+        }
+
+        .progress {
+            height: 4px;
+
+            .progress-bar {
+                background-color: $greenColor;
+            }
+        }
+
+        &__descr {
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+    }
+
+    .carousel-indicators {
+        position: relative;
+        margin-top: 60px;
+
+        li {
+            width: 10px;
+            height: 10px;
+            border: 1px solid $greenColor;
+            border-radius: 50%;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                background-color: $greenColor;
+            }
+
+            &.active {
+                background-color: $greenColor;
+            }
+        }
+    }
+
+    .name-block {
+        position: relative;
+        display: block;
+
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            background-color: $greenColor;
+            height: 100%;
+            right: -5%;
+            top: 0;
+        }
+    }
+}
+
+
+
+.progress-bar-block {
+    margin-top: 34px;
+
+    &__percent {
+        margin-left: 3.2px;
+    }
+}
+
+
+
+@media all and (max-width: 992px) {
+    .team__content {
+        margin: 50px auto 0 auto;
+    }
+
+    .team__img {
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 0 !important;
+    }
+}

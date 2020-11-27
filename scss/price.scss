@@ -1,0 +1,78 @@
+.price {
+    background-color: $grayColor;
+    padding-bottom: 30px;
+
+    .card {
+        min-height: 302px;
+        margin-bottom: 70px;
+        transition: all .5s linear;
+
+        &:hover {
+//            transform: rotateY(180deg) scale(-1, 1);
+        }
+
+        &:hover .card__header,
+        &:hover .card__price,
+        &:hover .card__price-text {
+            display: none;
+        }
+
+        &:hover .card__descr {
+            display: flex;
+            flex: 1 0 auto;
+        }
+
+        &:hover .card__btn {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        &__header {
+            background-color: $greenColor;
+            color: white;
+            font-family: 'open-sans-bold';
+            letter-spacing: 0.8px;
+            padding: 25px 0;
+        }
+
+        &__price {
+            font-family: 'Source-Sans-Pro-Black';
+            font-size: 42px;
+            color: $greenColor;
+            padding-top: 65px;
+        }
+
+        &__price-text {
+            color: #81868e;
+            font-family: "open-sans-regular";
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        &__descr {
+            display: none;
+            padding-top: 35px;
+        }
+
+        &__btn {
+            display: none;
+            border: 0;
+            color: #ffffff;
+            font-family: "open-sans-regular";
+            font-size: 16px;
+            background-color: $greenColor;
+            padding: 25px 0;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .price {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+.impressed {
+    background: url(../images/BG.jpg) no-repeat center/cover;
+    padding-bottom: 90px;
+    position: relative;
+
+    &__title {
+        color: #f3f3f3 !important;
+        margin-bottom: 55px;
+    }
+
+    &__descr {
+        color: #b2b3b3 !important;
+    }
+    
+    .author-block {
+        margin-top: 34px;
+        
+        .descr-bold {
+            margin-bottom: 0 !important;
+        }
+    }
+
+}
+
+.impressed__img {
+    position: absolute;
+    right: 0;
+    top: -10%;
+}
+
+@media all and (max-width: 992px) {
+    .impressed__img {
+        display: none;
+    }
+}

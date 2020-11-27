@@ -1,0 +1,47 @@
+.about-second {
+    //    padding-top: 4.7%;
+    //    padding-bottom: 4%;
+    padding-top: 70px;
+    padding-bottom: 57px;
+    background: $grayColor;
+
+    &__descr {
+        max-width: 457px;
+        margin: 0 auto;
+    }
+
+    .carousel-indicators {
+        position: relative;
+        margin-bottom: 55px;
+        margin-right: 0% !important;
+        margin-left: 0% !important;
+    }
+    
+    .carousel-indicators li {
+        width: 53px;
+        height: 53px;
+        background-color: #81868e;
+        border-radius: 50%;
+        margin-right: 5.5% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 0;
+        border-bottom: 0;
+
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+
+        &:hover {
+            background-color: $greenColor;
+        }
+
+        &.active {
+            background-color: $greenColor;
+        }
+    }
+}
+
+

@@ -1,0 +1,70 @@
+.review {
+    background-color: $grayColor;
+    padding-bottom: 100px;
+    &__img {
+        /* Style for "Layer 439" */
+        width: 130px;
+        height: 130px;
+    }
+
+    .review-block {
+        background-color: white;
+        padding: 60px 0;
+    }
+
+    .carousel-indicators {
+        position: relative;
+        margin-top: 60px;
+
+        li {
+            width: 10px;
+            height: 10px;
+            border: 1px solid $greenColor;
+            border-radius: 50%;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                background-color: $greenColor;
+            }
+
+            &.active {
+                background-color: $greenColor;
+            }
+        }
+    }
+
+    .name-block {
+        margin-top: 27px;
+
+        &__name {
+            color: #19bd9a;
+            font-family: "open-sans-bold";
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+            margin-bottom: 5px;
+        }
+
+        &__position {
+            color: #464646;
+            font-family: "open-sans";
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.56px;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .review__img {
+        margin: 0 auto 30px auto;
+    }
+    
+    .review__content {
+        margin: 0 auto;
+    }
+}

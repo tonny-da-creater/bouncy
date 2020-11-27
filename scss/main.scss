@@ -1,0 +1,131 @@
+@import 'header.scss';
+@import 'first-block.scss';
+@import 'about-first.scss';
+@import 'about-second.scss';
+@import 'projects.scss';
+@import 'services.scss';
+@import 'impressed-block.scss';
+@import 'portfolio.scss';
+@import 'team.scss';
+@import 'btn-block.scss';
+@import 'review.scss';
+@import 'news.scss';
+@import 'price.scss';
+@import 'subscribe.scss';
+@import 'contacts.scss';
+@import 'form-block.scss';
+@import 'map.scss';
+@import 'footer.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: "Big John";
+}
+
+.title {
+    font-family: 'Source-Sans-Pro';
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+   
+    &-margin {
+        margin-top: 80px;
+    }
+}
+
+.descr {
+    font-family: 'open-sans-regular';
+    line-height: 28px;
+    letter-spacing: 0.8px;
+    color: #81868e;
+
+    &-margin {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    &-width {
+        max-width: 457px;
+    }
+
+    &-bold {
+        font-family: 'open-sans-bold';
+    }
+
+    &-green {
+        color: $greenColor;
+        font-family: 'open-sans-bold';
+    }
+}
+
+.btn {
+    //    min-width: 140px;
+    //    max-width: 140px;
+    height: 37px;
+    padding: 0 1.5em;
+    border-radius: 19px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    &_white {
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+
+//ДЛЯ КАРУСЕЛИ
+
+.carousel-inner__title {
+    color: #464646;
+    font-family: "open-sans-regular";
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+}
+
+.carousel-inner__descr {
+    color: #81868e;
+    font-family: "open-sans-regular";
+    line-height: 28px;
+    letter-spacing: 0.8px;
+
+    &-green {
+        color: $greenColor;
+        font-family: 'open-sans-bold';
+    }
+
+    &-bold {
+        font-family: 'open-sans-bold';
+    }
+}
+
+.carousel-indicators {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    .carousel-indicators li {
+        margin-left: 9px !important;
+    }
+}

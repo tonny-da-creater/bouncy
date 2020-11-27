@@ -1,0 +1,160 @@
+@import 'variables.scss';
+
+.services {
+    background-color: $grayColor;
+    padding-bottom: 137px;
+
+    .carousel-indicators {
+        position: relative;
+
+        li {
+            margin-bottom: 17px;
+        }
+    }
+
+    &__diagram-block {
+        //      margin-right: 5%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .carousel-indicators li {
+        width: 53px;
+        height: 53px;
+        background-color: #81868e;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 0;
+        border-bottom: 0;
+
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+
+        &:hover {
+            background-color: $greenColor;
+        }
+
+        &.active {
+            background-color: $greenColor;
+        }
+    }
+}
+
+.diagram {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #047378;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background: $grayColor;
+    z-index: 3;
+    opacity: 1;
+}
+
+.diagram .piece {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.diagram .piece::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.diagram .piece.left {
+    z-index: 2;
+    border-radius: 50%;
+    /* only FireFox < 75.0v (fix bug)*/
+
+    &_p80 {
+        transform: rotate(-110deg);
+    }
+
+    &_p75 {
+        transform: rotate(-90deg);
+    }
+
+    &_p60 {
+        transform: rotate(-80deg);
+    }
+}
+
+
+
+
+//.diagram.over_50 .piece.left {
+//    transform: rotate(180deg);
+//}
+
+.diagram .piece.right {
+    transform: rotate(0deg);
+    z-index: 1;
+    border-radius: 50%;
+    /* only FireFox < 75.0v (fix bug)*/
+}
+
+//.diagram.over_50 .piece.right {
+//    transform: rotate(360deg);
+//}
+
+.diagram .left::before {
+    background: $greenColor;
+}
+
+//.diagram.over_50 .left::before {
+//    background: #047378;
+//}
+
+.diagram .right::before {
+    background: $greenColor;
+}
+
+.diagram .text {
+    z-index: 3;
+    color: #81868e;
+    font-family: 'open-sans-regular';
+}
+
+.diagram .text .number {
+    font-size: 25px;
+    letter-spacing: 1.25px;
+}
+
+.diagram .text .procent {
+    font-size: 14px;
+}
+
+.diagram-name {
+    color: #81868e;
+    font-size: 16px;
+    margin-top: 20px;
+}
+

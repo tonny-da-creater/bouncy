@@ -1,0 +1,33 @@
+.subscribe {
+    background: url(../images/subscribe-img.jpg) no-repeat center/cover;
+    padding-bottom: 100px;
+    
+    &__title {
+        color: white !important;
+    }
+}
+
+.form {
+    &__input {
+        background-color: transparent;
+        border: 1px solid #81868e;
+        color: white;
+        padding: 15px 0 15px 23px;
+    }
+    
+    &__btn {
+        border: 1px solid $greenColor;
+        background-color: $greenColor;
+        color: white;
+        padding: 15px 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .form {
+         
+        &__btn {
+            margin-top: 15px;
+        }
+    }
+}

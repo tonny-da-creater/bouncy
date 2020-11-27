@@ -1,0 +1,22 @@
+.footer {
+    padding-top: 80px;
+    padding-bottom: 97px;
+    background-color: $grayColor;
+    
+    .logo {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .copyright {
+        margin-top: 24px;
+    }
+    
+    .social-wrapper {
+            margin-top: 37px;
+        a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+    }
+}
